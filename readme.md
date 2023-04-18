@@ -18,3 +18,29 @@ This is the source code for ICLR 2023 TinyPaper *Characters Are Like Faces*
 **train.py**: training script
 
 **training_data_generation.py**: generate our training data using font files in the fonts directory
+
+## Usage
+
+To train your own network, you might first run `traning_data_generation.py` to generate the training data
+```
+python traning_data_generation.py
+```
+
+Then, run train.py to train the network
+```
+python train.py
+```
+
+After training, run `generate_data_base.py` to generate the database for query
+
+```
+python generate_database.py
+```
+
+At last, run `test_database.py` to scognize the file `test.png`
+
+```
+python test_database.py
+```
+
+note that if you want to evalueate the accuracy on a certain font, you may modify `evaluate.py`. This file recognize a character via web API (we establish it on a local server). The code for the server is in `web` directory. You should first put the database into the resource directory since it's a little big that we did not upload to the directory.
