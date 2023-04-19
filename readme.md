@@ -43,4 +43,4 @@ At last, run `test_database.py` to scognize the file `test.png`
 python test_database.py
 ```
 
-note that if you want to evalueate the accuracy on a certain font, you may modify `evaluate.py`. This file recognize a character via web API (we establish it on a local server). The code for the server is in `web` directory. You should first put the database into the resource directory since it's a little big that we did not upload to the directory.
+note that if you want to evalueate the accuracy on a certain font, you may modify `evaluate.py`. This file recognize a character via a web API (we establish it on a local server). The code for the server is in `web` directory. You should first put the database into the resource directory since it's a little big that we did not upload to the repository.
